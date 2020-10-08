@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("./img/intro.png");
+  background-size: cover;
+  background-position: center;
+}
