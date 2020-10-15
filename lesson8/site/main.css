@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 0.52vw;
+} */
+
+html {
+  font-size: 5.5px;
+}
+
+@media (min-width: 860px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 0.52vw;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.container--text-center {
+  text-align: center;
+}
+
+/* .wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+} */
+
+.btn,
+.form__btn {
+  display: inline-flex;
+  cursor: pointer;
+  /* font-size: 1.4rem; */
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.056rem;
+  text-transform: uppercase;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bordered {
+  border-radius: 0.5rem;
+}
+
+.btn-accent {
+  background-color: #e7434e;
+  color: #fff;
+}
+
+.btn-accent__icon {
+  height: 1.6rem;
+  margin-right: 0.7rem;
+}
+
+.btn-accent__icon path {
+  fill: #fff;
+}
+
+.form {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.form__field {
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  outline: none;
+}
+
+/* .form__field:focus {
+  border: 1px solid red;
+} */
+
+.form__btn {
+  height: 6rem;
+  width: 20rem;
+  border-radius: none;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("./img/intro.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  color: #f9fafe;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+  background-color: #555555;
+  z-index: -1;
+}
+
+.intro__title {
+  font-size: 7.2rem;
+  /* font-size: 4.5em; */
+  font-weight: 700;
+  letter-spacing: 0.576rem;
+  margin-bottom: 3rem;
+  /* margin-bottom: 0.41em; */
+}
+
+.intro__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.intro__form {
+  width: 64%;
+  margin: 9rem auto 0;
+}
+
+.test {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 860px) {
+  .test {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .test {
+    font-size: 1.4rem;
+  }
+}
+
+.test h2 {
+  /* font-size: 2.2em;
+  margin-bottom: 0.5em; */
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.test p {
+  /* font-size: 0.875em; */
+  font-size: 1.6em;
+}
