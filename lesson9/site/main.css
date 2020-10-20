@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 5.5px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+/*BUTTONS*/
+.btn-accent,
+.btn-ghost-light,
+.btn-ghost-dark {
+  display: inline-flex;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.056rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.btn-accent {
+  background-color: #e7434e;
+  color: #fff;
+  border: none;
+}
+
+.btn-accent__icon {
+  height: 1.6rem;
+  margin-right: 0.7rem;
+}
+
+.btn-accent__icon path {
+  fill: #fff;
+}
+
+.btn-ghost-light {
+  border: 1px solid #f9fafe;
+  background-color: transparent;
+  color: #f9fafe;
+}
+
+.btn-ghost-dark {
+  border: solid 1px rgba(38, 38, 38, 0.3);
+  background-color: transparent;
+  color: #343434;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.form__field {
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.form__btn {
+  height: 6rem;
+  width: 20rem;
+  border-radius: 0;
+}
+
+/* INTRO */
+.intro {
+  height: 100vh;
+  background-image: url("./img/intro.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  color: #f9fafe;
+}
+
+.intro__inner {
+  text-align: center;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+  background-color: #555555;
+  z-index: -1;
+}
+
+.intro__title {
+  font-size: 7.2rem;
+  font-weight: 700;
+  letter-spacing: 0.576rem;
+  margin-bottom: 3rem;
+}
+
+.intro__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.intro__form {
+  width: 64%;
+  margin: 9rem auto 0;
+}
+
+/* STATS */
+.stats {
+  border-radius: 5px;
+  box-shadow: 0 0 30px 0 rgba(52, 52, 52, 0.15);
+  background-color: #ffffff;
+  display: flex;
+  padding: 3rem 0;
+  transform: translateY(-50%);
+}
+.stats__item:last-child {
+  border-right: none;
+}
+.stats-item {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid rgba(113, 113, 113, 0.3);
+}
+/* .stats-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(50%, -50%);
+} */
+.stats-item__amount {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  color: #343434;
+  margin-bottom: 1.5rem;
+}
+.stats-item__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.36px;
+  color: #717171;
+}
+/* SECTION-TITLE */
+.section-title {
+  text-align: center;
+}
+.section-title__title {
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  color: #343435;
+  margin-bottom: 2.5rem;
+}
+.section-title__subtitle {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.32px;
+  color: #717171;
+}
+
+/*DESTINATIONS*/
+.destinations {
+  padding-bottom: 8rem;
+}
+
+.destinations__items {
+  margin: 8rem 0 9rem;
+}
+
+.destinations__item {
+  margin-bottom: 30px;
+}
+
+.destinations__btn {
+  width: 31rem;
+  height: 6rem;
+}
+
+.destination {
+  height: 36rem;
+  background-image: url("./img/service1.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.destination::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+  background-image: linear-gradient(to top, #000, #fff);
+  z-index: -1;
+}
+
+/*MEDIA*/
+@media (min-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 0.52vw;
+  }
+  .container {
+    max-width: 114rem;
+  }
+}
